@@ -1,0 +1,56 @@
+.heart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+.heart {
+    position: absolute;
+    color: #e53935;
+    font-size: 20px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.h1{
+    position:center;
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font
+
+}
+.scrolling-text-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scrolling-text {
+    font-size: 24px;
+    color: #333;
+    animation: scrollText 10s linear infinite;
+      font-family: sanserif ;
+     font-style: italic;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
